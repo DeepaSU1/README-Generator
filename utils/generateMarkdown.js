@@ -3,28 +3,29 @@ function generateMarkdown(userData) {
 // Generate Table of Contents based on user input
 let draftToC = `## Table of Contents`;
   
-if (userData.Installation !== '') { draftToC += `
+// checking the input
+if (userData.Installation !== " ") { draftToC += `
 * [Installation](#Installation)` };
 
-if (userData.usage !== '') { draftToC += `
+if (userData.usage !== " ") { draftToC += `
 * [Usage](#Usage)` };
 
-if (userData.Contributing !== '') { draftToC += `
+if (userData.Contributing !== " ") { draftToC += `
 * [Contributing](#Contributing)` };
 
-if (userData.tests !== '') { draftToC += `
+if (userData.tests !== " ") { draftToC += `
 * [Tests](#Tests)` };
 
 
 // Generate markdown for the top required portions of the README
+// printing the description
 let draftMarkdown = 
 `# ${userData.file_name}
 
 
-
 ## Description 
 
-*The what, why, and how:* 
+*The  Why, What and How:* 
 
 ${userData.Description}
 `
@@ -32,12 +33,12 @@ ${userData.Description}
 // Add Table of Contents to markdown
 draftMarkdown += draftToC;
 
-// Add License section since License is required to Table of Contents
+// Add License section 
 draftMarkdown += `
 * [License](#License)`;
 
 
-// Optional Installation section
+//  Installation section
 if (userData.Installation !== '') {
 
 draftMarkdown +=
@@ -52,7 +53,7 @@ ${userData.Installation}`
 
 
   
-    // Optional Usage section
+    //  Usage section
     if (userData.Usage !== '') {
     
       draftMarkdown +=
@@ -67,7 +68,7 @@ ${userData.Installation}`
       };
       
 
-    // Optional Contributing section
+    //  Contributing section
     if (userData.Contributing !== '') {
   
       draftMarkdown +=
@@ -82,7 +83,7 @@ ${userData.Installation}`
       };
 
       
-    // Optional Tests section
+    //  Tests section
     if (userData.Tests !== '') {
     
       draftMarkdown +=
@@ -96,7 +97,7 @@ ${userData.Installation}`
       };
     
     
-      // License section is required
+      // License section 
       draftMarkdown +=
       `
       

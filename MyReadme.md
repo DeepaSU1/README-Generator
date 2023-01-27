@@ -4,7 +4,9 @@
 
 ## Description 
 
-*The what, why, and how:* 
+*The  why, what and how:* 
+
+Every project needs a README with information about the app. What the app is for, how to use the app, how to install the app,how to report issues and how to make contributions to the success of the project.
 
 Test Description for readme check code and output https://github.com/DeepaSU1/README-Generator
 

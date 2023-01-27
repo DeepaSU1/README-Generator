@@ -73,7 +73,8 @@ async function init() {
 
     } catch (error) {
         console.log(error);
-    }
+
+           }
 
 };
 
