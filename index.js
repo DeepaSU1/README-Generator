@@ -64,11 +64,11 @@ async function init() {
         const userData = await inquirer.prompt(questions);
         //console.log("Your InputData: ", userData);
 
-        console.log("Generating your README next...")
+        console.log("Generating your README.md ")
         const markdown = generateMarkdown(userData);
         console.log(markdown);
     
-        // Write markdown to file
+        // Write the markdown to the file
         await writeFileAsync(userData.file_name+'.md', markdown);
 
     } catch (error) {
