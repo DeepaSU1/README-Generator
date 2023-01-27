@@ -21,7 +21,9 @@ Test Description for readme check code and output https://github.com/DeepaSU1/RE
 
 *Steps required to install project and how to get the development environment running:*
 
-Install
+Installation
+
+To generate your own README, download to your local system. The application will start by running node index.js in the command line. Inquirer will prompt you for your inputs and it will generate the README file.
       
       ## Usage 
       
